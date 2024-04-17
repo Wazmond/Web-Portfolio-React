@@ -1,36 +1,14 @@
 import styled from "styled-components";
-import "./PageCSS/Home.css"
-
+import { HomePage, TextContainer} from "./PageData/Home"
 
 const Psegment = styled.div`
-    border: 5px solid black;
+    /* border: 5px solid black; */
+    background-color: #dcdcfa;
     width: 100%;
     height: 100vh;
-    scroll-margin-top: 35px;
+    scroll-margin-top: 47px;
 `;
 
-const HomePage = styled.div``;
-const TextContainer = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    margin-top: -53.5px;
-
-    color: #0a0035;
-    font-family: kanit;
-    font-size: 24px;
-    letter-spacing: 4px;
-    h1 {
-        font-weight: normal;
-    }
-    name {
-        font-weight: bold;
-    }
-    p {
-        font-size: 27.5px;
-        letter-spacing: 1px;
-    }
-`;
 const About = styled.div`
     background-color: greenyellow;
 `;
@@ -50,7 +28,7 @@ const Contact = styled.div`
 const Gap = styled.div` // Used at the very top, under navbar
     background-color: #01b7ff;
     opacity: 35%;
-    height: 35px;
+    height: 47px;
     margin: 0;
     padding: 0;
 `;
@@ -58,12 +36,12 @@ const Gap = styled.div` // Used at the very top, under navbar
 
 export default function Page() {
     return(
-        <>  <Gap />
+        <>
             <Psegment id="home"> 
                     <HomePage> 
                         <TextContainer>
                             <h1>Hi I'm <name>Ryuichi Nakamura</name></h1>
-                            <p>I'm an Entry-Level Developer based in Sydney.</p>
+                            <p>I'm an aspiring developer based in Sydney.</p>
                         </TextContainer>
                     </HomePage>
             </Psegment>
