@@ -4,7 +4,7 @@ export const HomePage = styled.div`
     width: 100%;
     height: 100%;
 `;
-export const TextContainer = styled.div`
+export const HomeTextContainer = styled.div`
     position: absolute;
     top: 50%;
     left: 10%;

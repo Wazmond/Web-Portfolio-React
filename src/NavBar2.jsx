@@ -10,11 +10,12 @@ const NavBar = styled.div`
 const Container = styled.div`
     display: flex;
     padding: 10px 10px;
-    `;
+`;
 const HomeContainer = styled.div`
     margin-right: auto;
 `;
 const LinkContainer = styled.div``;
+
 const Link = styled.a`
     text-decoration: none;
     font-family: Kanit;
@@ -44,8 +45,6 @@ export default function Navbar() {
             <LinkContainer>
               <Link href="#about">ABOUT</Link>
               <Link href="#projects">PROJECTS</Link>
-              <Link href="#experience">EXPERIENCE</Link>
-              <Link href="#education">EDUCATION</Link>
               <Link href="#contact">CONTACT</Link>
             </LinkContainer>
           </Container>
