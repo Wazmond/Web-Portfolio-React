@@ -2,15 +2,20 @@ import styled from "styled-components"
 
 export const About = styled.div`
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     padding: 50px 0 50px;
+    overflow:hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 `;
 
 export const AboutTextContainer = styled.div`
     position: relative;
-    display: block;
-    left: 65%;
-    transform: translateX(-50%);
+    width: 500px;
+    margin-right: 7.5%;
+    word-wrap: break-word;
     h1 {
         font-family: kanit;
         letter-spacing: 4px;

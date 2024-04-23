@@ -2,9 +2,11 @@ import styled from "styled-components"
 
 const NavBar = styled.div`
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background-color: #dcdcfa;
     z-index: 9999;
+    scrollbar-gutter: stable;
+    overflow: auto;
 `;
 
 const Container = styled.div`
@@ -27,7 +29,7 @@ const Link = styled.a`
 `;
 
 const Line = styled.div`
-    position: absolute;
+    position: relative;
     left: 1vh;
     
     content: '';

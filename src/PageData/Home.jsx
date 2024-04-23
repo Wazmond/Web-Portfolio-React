@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const HomePage = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 100%;
 `;
 export const HomeTextContainer = styled.div`

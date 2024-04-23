@@ -7,17 +7,23 @@ import { Projects,
     ProjectsTitle } from "./PageData/Projects"
 import { Contact,
     ContactLogoContainer,
-    ContactLogos } from "./PageData/Contact"
-
+    ContactLogo,
+    ContactBlocks,
+    ContactLogoDesc } from "./PageData/Contact"
+import GitLogo from "/src/Logos/Github-Logo.png"
+import EmailLogo from "/src/Logos/Email-Logo.png"
+import PhoneLogo from "/src/Logos/Phone-Logo.png"
 
 const PagesContainer = styled.div`
     background-color: #dcdcfa;
-    width: 100%;
+    width: 100vw;
+    scrollbar-gutter: stable;
+    overflow: auto;
     `;
 const Psegment = styled.div`
     /* border: 5px solid black; */
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: calc(100vh - 47px);
     scroll-margin-top: 47px;
 `;
 
@@ -32,7 +38,6 @@ const Guideline = styled.div`
     padding: 0;
 `;
 /* -x-x-x-x- TO DO LIST -x-x-x-x-
-
 Design the theme of website more.
     Key being minimalistic, clean, simple yet with many features or details.
 Make a custom scroll bar to suit the current layout of light blue + dark blue
@@ -119,14 +124,12 @@ export default function Page() {
                     <About>
                         <AboutTextContainer>
                             <h1>ABOUT</h1>
-                            <p>Self taught <Age />y.o aspiring developer on a journey,</p>
-                            <p>To learn more about the world of programming and technology.</p>
-                            <p>Having developing knowledge in react, javascript, html/css, and C,</p>
-                            <p>I'm passionate about crafting innovative solutions and completing challenges.</p>
-                            {/* <p>HELP ME, HELP YOU</p> */}
-                            {/* <p>I'm driven by completion of challenges and to create meaningful experiences.</p> */}
-                            <p>But really, I just want to make cool stuff...</p>
-                            <p>So let's connect and building something awesome. </p>
+                            <p>Self taught <Age />y.o aspiring developer on a journey,
+                            To learn more about the world of programming and technology.
+                            Having developing knowledge in react, javascript, html/css, and C,
+                            I'm passionate about crafting innovative solutions and completing challenges.
+                            But really, I just want to make cool stuff...
+                            So let's connect and building something awesome. </p>
                         </AboutTextContainer>
                         <AboutTimeLineContainer />
                         {/* Could make a time line, interactive. it can be from a button or from mouse movement? left back to the past and right to the present. man can get bigger and smaller
@@ -145,9 +148,18 @@ export default function Page() {
                     <Contact>
                         <h1>CONTACT</h1>
                         <ContactLogoContainer>
-                            <ContactLogos src="./src/Logos/Github-Logo.png" alt="GitHub"/>
-                            <ContactLogos src="./src/Logos/Mobile-Phone-Logo.jpg" alt="Phone"/>
-                            <ContactLogos src="./src/Logos/Email-Logo.jpg" alt="Email"/>
+                            <ContactBlocks class="GitHub">
+                                <ContactLogo src={GitLogo} alt="GitHub"/>
+                                <ContactLogoDesc>@WAZMOND</ContactLogoDesc>
+                            </ ContactBlocks>
+                            <ContactBlocks class="Phone" >
+                                <ContactLogo src={PhoneLogo} alt="Phone"/>
+                                <ContactLogoDesc>+61 466 078 612</ContactLogoDesc>
+                            </ ContactBlocks>
+                            <ContactBlocks class="Email">
+                                <ContactLogo src={EmailLogo} alt="Email" href="mailto:rynak25@gmail.com"/>
+                                <ContactLogoDesc href="mailto:rynak25@gmail.com">RYNAK25@GMAIL.COM</ContactLogoDesc>
+                            </ ContactBlocks>
                         </ContactLogoContainer>
                     </Contact>
             </Psegment>
