@@ -19,7 +19,7 @@ export const ProjectsContainer = styled.div`
     margin: auto;
     border: 2px solid #0a0035;
     height: 75vh;
-    width: 80%;
+    width: 85%;
     `;
 
 // export default function ProjectsCard() {

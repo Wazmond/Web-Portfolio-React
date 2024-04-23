@@ -118,15 +118,19 @@ export default function Page() {
                         </HomeTextContainer>
                     </HomePage>
             </Psegment>
-            <Guideline />
+            {/* <Guideline /> */}
             <Psegment  id="about">
                     <About>
                         <AboutTextContainer>
                             <h1>ABOUT</h1>
-                            <p>Self taught <Age />y.o aspiring developer on a journey.</p>
+                            <p>Self taught <Age />y.o aspiring developer on a journey,</p>
+                            <p>To learn more about the world of programming and technology.</p>
                             <p>Having developing knowledge in react, javascript, html/css, and C,</p>
-                            <p>HELP ME, HELP YOU</p>
-                            <p>But what keeps me going, is I just want to make some cool stuff, really.</p>
+                            <p>I'm passionate about crafting innovative solutions and completing challenges.</p>
+                            {/* <p>HELP ME, HELP YOU</p> */}
+                            {/* <p>I'm driven by completion of challenges and to create meaningful experiences.</p> */}
+                            <p>But really, I just want to make cool stuff...</p>
+                            <p>So let's connect and building something awesome. </p>
                         </AboutTextContainer>
                         <AboutTimeLineContainer />
                         {/* Could make a time line, interactive. it can be from a button or from mouse movement? left back to the past and right to the present. man can get bigger and smaller
