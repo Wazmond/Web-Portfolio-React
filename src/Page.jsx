@@ -4,9 +4,10 @@ import { About, AboutTextContainer, AboutTimeLineContainer } from "./PageData/Ab
 import { Projects, 
     ProjectsContainer, 
     ProjectsCard, 
-    // ProjectsDisplay, 
-    // ProjectsDescription, 
     ProjectsTitle } from "./PageData/Projects"
+import { Contact,
+    ContactLogoContainer,
+    ContactLogos } from "./PageData/Contact"
 
 
 const PagesContainer = styled.div`
@@ -81,11 +82,6 @@ Include info like my email address or phone number.
 Possibly come up with my own logo? and display it
 */
 
-
-const Contact = styled.div`
-    background-color: greenyellow;
-`;
-
 const Gap = styled.div` // Used at the very top, under navbar
     background-color: #01b7ff;
     opacity: 35%;
@@ -148,7 +144,11 @@ export default function Page() {
             <Psegment id="contact">
                     <Contact>
                         <h1>CONTACT</h1>
-                        <p>desc</p>
+                        <ContactLogoContainer>
+                            <ContactLogos src="./src/Logos/Github-Logo.png" alt="GitHub"/>
+                            <ContactLogos src="./src/Logos/Mobile-Phone-Logo.jpg" alt="Phone"/>
+                            <ContactLogos src="./src/Logos/Email-Logo.jpg" alt="Email"/>
+                        </ContactLogoContainer>
                     </Contact>
             </Psegment>
         </PagesContainer>
