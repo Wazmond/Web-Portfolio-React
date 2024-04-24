@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import useState from "react";
 
 const NavBar = styled.div`
     position: fixed;
@@ -26,6 +27,12 @@ const Link = styled.a`
     letter-spacing: 1px;
     margin: 0 5px;
     color: #0a0035;
+
+    &:hover {
+      text-decoration: underline;
+      font-size: 22px;
+      transition: all 0.1s;
+    }
 `;
 
 const Line = styled.div`
@@ -37,6 +44,7 @@ const Line = styled.div`
     width: 98%;
     height: 2px;
     `;
+
 export default function Navbar() {
     return(
         <NavBar>
