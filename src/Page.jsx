@@ -17,14 +17,11 @@ import PhoneLogo from "/src/Logos/Phone-Logo.png"
 const PagesContainer = styled.div`
     background-color: #dcdcfa;
     width: 100vw;
-    scrollbar-gutter: stable;
-    overflow: auto;
     `;
 const Psegment = styled.div`
-    /* border: 5px solid black; */
     width: 100vw;
-    height: calc(100vh - 47px);
-    scroll-margin-top: 47px;
+    height: calc(100vh - 55px);
+    scroll-margin-top: 55px;
 `;
 
 const Guideline = styled.div`

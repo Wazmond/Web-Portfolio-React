@@ -8,11 +8,17 @@ const NavBar = styled.div`
     z-index: 9999;
     scrollbar-gutter: stable;
     overflow: auto;
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
 `;
 
 const Container = styled.div`
     display: flex;
+    flex-direction: row;
     padding: 10px 10px;
+    height: 100%;
 `;
 const HomeContainer = styled.div`
     margin-right: auto;
@@ -36,9 +42,6 @@ const Link = styled.a`
 `;
 
 const Line = styled.div`
-    position: relative;
-    left: 1vh;
-    
     content: '';
     background-color: #0a0035;
     width: 98%;

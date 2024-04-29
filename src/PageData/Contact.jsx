@@ -5,15 +5,15 @@ export const Contact = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    height: calc(100vh - 55px);
     h1 {
-        font-size: 24px;
+        font-size: 28px;
         color: #0a0035;
         letter-spacing: 4px;
         font-weight: bold;
         text-align: center;
         position: relative;
-        margin-top: 40%;
     }
 `;
 
