@@ -206,7 +206,7 @@ Error generating stack: `+o.message+`
     margin: 0 15px 0 auto;
     font-size: 18px;
     letter-spacing: 0.5px;
-`,J0="/assets/Github-Logo-DkTr3Tul.png",q0="/assets/Email-Logo-DSdAUhSC.png",b0="/assets/Phone-Logo-BjqVojgu.png",em=W.div`
+`,J0="/Web-Portfolio-React/assets/Github-Logo-DkTr3Tul.png",q0="/Web-Portfolio-React/assets/Email-Logo-DSdAUhSC.png",b0="/Web-Portfolio-React/assets/Phone-Logo-BjqVojgu.png",em=W.div`
     background-color: #dcdcfa;
     width: 100vw;
     `,ll=W.div`
