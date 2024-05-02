@@ -121,14 +121,14 @@ export default function Page() {
                     <About>
                         <AboutTextContainer>
                             <h1>ABOUT</h1>
-                            <p>Self taught <Age />y.o aspiring developer on a journey,
-                            To learn more about the world of programming and technology.
+                            <p>Self taught <Age />y.o aspiring developer on a journey
+                            to learn more about the world of programming and technology.
                             Having developing knowledge in react, javascript, html/css, and C,
                             I'm passionate about crafting innovative solutions and completing challenges.
                             But really, I just want to make cool stuff...
                             So let's connect and building something awesome. </p>
                         </AboutTextContainer>
-                        <AboutTimeLineContainer />
+                        <AboutTimeLineContainer>In progress...</AboutTimeLineContainer>
                         {/* Could make a time line, interactive. it can be from a button or from mouse movement? left back to the past and right to the present. man can get bigger and smaller
                         this can make the use of an education  */}
                     </About>
@@ -138,11 +138,12 @@ export default function Page() {
                         <ProjectsTitle>PROJECTS</ProjectsTitle>
                         <ProjectsContainer>
                             <ProjectsCard />
+                            <p>In progress...</p>
                         </ProjectsContainer>
                     </Projects>
             </Psegment>
             <Psegment id="contact">
-                    <Contact>
+                    <Contact>/
                         <h1>CONTACT</h1>
                         <ContactLogoContainer>
                             <ContactBlocks className="GitHub" href="https://github.com/Wazmond" target="_blank">
