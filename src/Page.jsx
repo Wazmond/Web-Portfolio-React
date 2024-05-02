@@ -145,17 +145,17 @@ export default function Page() {
                     <Contact>
                         <h1>CONTACT</h1>
                         <ContactLogoContainer>
-                            <ContactBlocks className="GitHub">
+                            <ContactBlocks className="GitHub" href="https://github.com/Wazmond" target="_blank">
                                 <ContactLogo src={GitLogo} alt="GitHub"/>
                                 <ContactLogoDesc>@WAZMOND</ContactLogoDesc>
                             </ ContactBlocks>
-                            <ContactBlocks className="Phone" >
+                            <ContactBlocks className="Phone" href="tel:+61 466 078 612">
                                 <ContactLogo src={PhoneLogo} alt="Phone"/>
                                 <ContactLogoDesc>+61 466 078 612</ContactLogoDesc>
                             </ ContactBlocks>
-                            <ContactBlocks className="Email">
-                                <ContactLogo src={EmailLogo} alt="Email" href="mailto:rynak25@gmail.com"/>
-                                <ContactLogoDesc href="mailto:rynak25@gmail.com">RYNAK25@GMAIL.COM</ContactLogoDesc>
+                            <ContactBlocks className="Email" href="mailto:rynak25@gmail.com?subject=I want to hire you!&body=Hello Ryuichi,%0D%0A%0AYour portfolio is so good, I want you to become our new hire.%0D%0A%0ARegards,%0D%0AHR of ...">
+                                <ContactLogo src={EmailLogo} alt="Email"/>
+                                <ContactLogoDesc>RYNAK25@GMAIL.COM</ContactLogoDesc>
                             </ ContactBlocks>
                         </ContactLogoContainer>
                     </Contact>
