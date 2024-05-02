@@ -36,12 +36,15 @@ const Link = styled.a`
     color: #0a0035;
     padding: 0 5px;
 
+    border-radius: 5px;
+
+    transition: all 200ms ease-out;
     &:hover {
       /* text-decoration: underline; */
       background-color:#0a00351c;
-      transition: all 0.1s;
       justify-self: center;
       align-self: center;
+      letter-spacing: 5px;
     }
 `;
 
