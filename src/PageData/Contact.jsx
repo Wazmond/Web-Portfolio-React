@@ -39,7 +39,7 @@ export const ContactBlocks = styled.a`
         box-shadow: rgba(4, 0, 59, 0.9) 0px 5px 15px;
     }
 
-    background-color: #ededfc;
+    background-color: #eaeaff;
     color: #0a0035;
     text-decoration: none;
 `;
