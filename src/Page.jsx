@@ -143,7 +143,7 @@ export default function Page() {
                     </Projects>
             </Psegment>
             <Psegment id="contact">
-                    <Contact>/
+                    <Contact>
                         <h1>CONTACT</h1>
                         <ContactLogoContainer>
                             <ContactBlocks className="GitHub" href="https://github.com/Wazmond" target="_blank">
