@@ -20,8 +20,16 @@ const PagesContainer = styled.div`
     `;
 const Psegment = styled.div`
     width: 100vw;
-    height: calc(100vh - 55px);
-    scroll-margin-top: 55px;
+
+    &#home {
+        height: 100vh;
+    }
+
+    &#about, &#contact, &#projects {
+        height: calc(100vh - 55px);
+        scroll-margin-top: 55px;
+    }
+
 `;
 
 const Guideline = styled.div`

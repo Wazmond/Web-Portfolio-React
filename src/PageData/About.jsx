@@ -1,9 +1,6 @@
 import styled from "styled-components"
 
 export const About = styled.div`
-    height: 100vh;
-    width: 100vw;
-    padding: 50px 0 50px;
     overflow:hidden;
 
     display: flex;
@@ -14,8 +11,9 @@ export const About = styled.div`
 export const AboutTextContainer = styled.div`
     position: relative;
     width: 500px;
-    margin-right: 7.5%;
+    margin: 5% 7.5% 5%;
     word-wrap: break-word;
+
     h1 {
         font-family: kanit;
         letter-spacing: 4px;
@@ -33,12 +31,11 @@ export const AboutTextContainer = styled.div`
 `;
 
 export const AboutTimeLineContainer = styled.div`
-    display: block;
     border: 2px solid #0a0035;
-    margin: 0 auto;
     position: relative;
-    top: 35vh;
+    align-self: center;
+
     height: 50vh;
-    width: 85%;
-    transform: translateY(-50%);
+    width: 85vw;
+    flex-wrap: wrap;
 `;

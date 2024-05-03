@@ -1,8 +1,6 @@
 import styled from "styled-components"
 
 export const Projects = styled.div`
-    display: block; 
-    height: calc(100vh - 47px);
     width: 100%;
     overflow: hidden;
 `;
