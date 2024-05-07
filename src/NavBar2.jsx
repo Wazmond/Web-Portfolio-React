@@ -11,33 +11,32 @@ export default function Navbar() {
   };
 
   const Navigation = styled.div`
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
   `;
 
   const NavBar = styled.div`
-      position: fixed;
-      width: 100vw;
-      background-color: #dcdcfa;
-      z-index: 9999;
-      scrollbar-gutter: stable;
-      overflow: auto;
-      height: 55px;
+    position: fixed;
+    width: 100vw;
+    background-color: #dcdcfa;
+    z-index: 9999;
+    scrollbar-gutter: stable;
+    overflow: auto;
+    height: 55px;
 
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   `;
 
   const Container = styled.div`
-      display: flex;
-      flex-direction: row;
-      padding: 10px 10px;
-      height: calc(55px - 2px);
-
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    height: calc(55px - 2px);
   `;
   const HomeContainer = styled.div`
-      margin-right: auto;
+    margin-right: auto;
   `;
   const LinkContainer = styled.div`
     display: none;
@@ -82,7 +81,7 @@ export default function Navbar() {
     align-items: center;
     margin-right: 2px;
 
-    @media only screen and (max-width:500px) {
+    @media only screen and (max-width:549px) {
       display: flex;
       &:hover {
         cursor: pointer;
@@ -90,29 +89,24 @@ export default function Navbar() {
     }
   `;
   const MenuLogo = styled.img`
-      height: 20px;
-      width: 35Px;
+    height: 20px;
+    width: 35Px;
   `;
   const MenuContainer = styled.div`
     position: fixed;
-    display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
+    display: flex;
     flex-direction: column;
     align-items: center;
-    top: 55px;
     width: 100vw;    
     z-index: 1000;
 
     transition: all 200ms ease-in;
-    transform: translateY(55px);
-    /* ${ isMenuOpen } && {
-      transform: translateY(55px)
-    } */
-    transform: ${({ isMenuOpen }) => (isMenuOpen ? "translateY(55px)" : "none")};
-    /*transition: ${({ isMenuOpen }) => (isMenuOpen ? "all 500ms ease-in" : "none")}; */
+    transform: ${({ isMenuOpen }) => (isMenuOpen ? "translateY(55px)" : "translateY(-65px)")};
+
   `;
   const MenuLink = styled.a`
     text-decoration: none;
-    font-family: Kanit;
+    font-family:  Kanit;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;

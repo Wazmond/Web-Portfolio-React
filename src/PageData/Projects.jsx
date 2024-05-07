@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const Projects = styled.div`
     width: 100%;
     overflow: hidden;
+    scrollbar-gutter: stable;
 `;
 
 export const ProjectsTitle = styled.h1`

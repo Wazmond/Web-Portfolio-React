@@ -20,6 +20,7 @@ const PagesContainer = styled.div`
     `;
 const Psegment = styled.div`
     width: 100vw;
+
     &#home {
         height: 100vh;
     }

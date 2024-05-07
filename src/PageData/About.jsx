@@ -6,13 +6,18 @@ export const About = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    scrollbar-gutter: stable;
 `;
 
 export const AboutTextContainer = styled.div`
     position: relative;
-    width: 500px;
+
     margin: 5% 7.5% 5%;
     word-wrap: break-word;
+
+    @media only screen and (min-width:590px) {
+        width: 500px;
+    }
 
     h1 {
         font-family: kanit;
