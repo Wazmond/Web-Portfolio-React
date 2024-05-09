@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { HomePage, HomeTextContainer} from "./PageData/Home"
-import { About, AboutTextContainer, AboutTimeLineContainer } from "./PageData/About"
+import AboutTimeLine, { About, AboutTextContainer, AboutTimeLineContainer } from "./PageData/About"
 import { Projects, 
     ProjectsContainer, 
     ProjectsCard, 
@@ -134,7 +134,18 @@ export default function Page() {
                             But really, I just want to make cool stuff...
                             So let's connect and building something awesome. </p>
                         </AboutTextContainer>
-                        <AboutTimeLineContainer>In progress...</AboutTimeLineContainer>
+                        <AboutTimeLineContainer>
+                            <AboutTimeLine date="25/10/2001" title="Ryuichi was born" desc="Born in Tokyo, Japan." className="ATL-fade-top"/>
+                            <AboutTimeLine date="~ 2004" title="Immigrated to Australia" desc="Immigrated to Sydney, Australia around the age of 3"/>
+                            <AboutTimeLine date="~ 2006" title="Pre school" desc="Pre school, not much else to say about that... Im not even sure how long I was there either..."/>
+                            <AboutTimeLine date="2007 - 2013" title="Primary School" desc="EVENT 4"/>
+                            <AboutTimeLine date="2014 - 2019" title="High School" desc="EVENT 5"/>
+                            <AboutTimeLine date="Oct 2019" title="EVENT 6" desc="EVENT 6"/>
+                            <AboutTimeLine date="Dec 2019" title="EVENT 7" desc="EVENT 7"/>
+                            <AboutTimeLine date="EVENT 8 " title="EVENT 8" desc="EVENT 8"/>
+                            <AboutTimeLine date="EVENT 9 " title="EVENT 9" desc="EVENT 9"/>
+                            <AboutTimeLine date="EVENT 10 " title="EVENT 10" desc="EVENT 10" className="ATL-fade-bottom"/>
+                        </AboutTimeLineContainer>
                         {/* Could make a time line, interactive. it can be from a button or from mouse movement? left back to the past and right to the present. man can get bigger and smaller
                         this can make the use of an education  */}
                     </About>
