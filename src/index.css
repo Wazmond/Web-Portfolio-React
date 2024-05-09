@@ -20,5 +20,5 @@ html {
 
 @font-face {
     font-family: kanit;
-    src: url(../public/Kanit/Kanit-Regular.ttf);
+    src: url(/Kanit/Kanit-Regular.ttf);
 }

@@ -115,12 +115,12 @@ export default function Page() {
         <>
         <PagesContainer>
             <Psegment id="home"> 
-                    <HomePage> 
-                        <HomeTextContainer>
-                            <h1>Hi I'm <name>Ryuichi Nakamura</name></h1>
-                            <p>I'm an aspiring developer based in Sydney.</p>
-                        </HomeTextContainer>
-                    </HomePage>
+                <HomePage> 
+                    <HomeTextContainer>
+                        <h1>Hi I'm <name>Ryuichi Nakamura</name></h1>
+                        <p>I'm an aspiring developer based in Sydney.</p>
+                    </HomeTextContainer>
+                </HomePage>
             </Psegment>
             {/* <Guideline /> */}
             <Psegment  id="about">

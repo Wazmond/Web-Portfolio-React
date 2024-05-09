@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import React, { useState, useRef, useEffect } from "react";
-
+import menulogo from "/src/Logos/menu_logo.png";
 const Navigation = styled.div`
   position: absolute;
   height: 100vh;
@@ -155,7 +155,7 @@ export default function Navbar() {
             <Link href="#home">HOME</Link> 
           </HomeContainer>
           <MenuButton onClick={toggleMenu}>
-            <MenuLogo src="./src/Logos/menu_logo.png" alt="menulogo" />
+            <MenuLogo src={menulogo} alt="menulogo" />
           </MenuButton>
           <LinkContainer>
             <Link href="#about">ABOUT</Link>
