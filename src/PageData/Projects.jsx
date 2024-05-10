@@ -19,6 +19,10 @@ export const ProjectsContainer = styled.div`
     border: 2px solid #0a0035;
     height: 75vh;
     width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
     `;
 
 // export default function ProjectsCard() {

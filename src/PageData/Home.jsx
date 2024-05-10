@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const HomePage = styled.div`
     display: flex;
     height: 100vh;
-    padding-top: 55px;
     justify-content: flex-start;
     align-items: center;
 `;

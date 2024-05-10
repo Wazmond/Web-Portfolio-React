@@ -44,15 +44,15 @@ export const AboutTimeLineContainer = styled.div`
     width: 85vw;
     flex-wrap: wrap;
 
+    overflow: hidden;
     overflow-y: scroll;
-    overflow-x: hidden;
+    /* scrollbar-gutter: stable; */
 
 `;
 
 const TimelineContainer = styled.div`
     width: 100%;
-    height: 150px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
 `;
 const BoxDiv = styled.div`
@@ -84,22 +84,33 @@ const Line = styled.div`
 const TextContainer = styled.div`
     font-family: kanit;
     width: 100%;
-    border: 1px solid brown;
+    margin: 30px 5px 30px 0;
+    /* border: 1px solid brown; */
 `;
 const TitleContainer = styled.div`
     display: flex;
     flex-direction: row;
+    @media only screen and (max-width: 500px) {
+        font-size: 2vw;
+    }
+    font-size: 14px;
+    
 
 `;
 const Date = styled.h1`
-    width: 175px;
+    width: 25vw;
     margin-right: 30px;
     display: flex;
     justify-content: center;
     align-content: center;
 `;
-const Title = styled.h1``;
-const DescContainer = styled.div``;
+const Title = styled.h1`
+
+`;
+const DescContainer = styled.div`
+    margin-top: 10px;
+    padding: 0 10px;
+`;
 const Desc = styled.p``;
 
 export default function AboutTimeLine({date, title, desc}) {

@@ -13,6 +13,8 @@ import { Contact,
 import GitLogo from "/src/Logos/Github-Logo.png"
 import EmailLogo from "/src/Logos/Email-Logo.png"
 import PhoneLogo from "/src/Logos/Phone-Logo.png"
+import LinkedInLogo from "/src/Logos/LinkedIn-Logo.png"
+import InstagramLogo from "/src/Logos/Instagram-Logo.png"
 
 const PagesContainer = styled.div`
     background-color: #dcdcfa;
@@ -46,8 +48,8 @@ Design the theme of website more.
 Make a custom scroll bar to suit the current layout of light blue + dark blue
 Make a prompt or signal of somesorts to tell you to scroll down
     an animated arrow sign pointing down
-    simple line going down
-Make a button that brings you to the very top of the screen
+    simple line going downs
+Make a button that brings you to the very top of the screens
 @media function to change layout of website if it becomes smaller
     Smaller or viewing from a phone etc.
     Menu button that shows all the options but in a sleeker way?
@@ -137,14 +139,18 @@ export default function Page() {
                         <AboutTimeLineContainer>
                             <AboutTimeLine date="25/10/2001" title="Ryuichi was born" desc="Born in Tokyo, Japan." className="ATL-fade-top"/>
                             <AboutTimeLine date="~ 2004" title="Immigrated to Australia" desc="Immigrated to Sydney, Australia around the age of 3"/>
-                            <AboutTimeLine date="~ 2006" title="Pre school" desc="Pre school, not much else to say about that... Im not even sure how long I was there either..."/>
-                            <AboutTimeLine date="2007 - 2013" title="Primary School" desc="EVENT 4"/>
-                            <AboutTimeLine date="2014 - 2019" title="High School" desc="EVENT 5"/>
-                            <AboutTimeLine date="Oct 2019" title="EVENT 6" desc="EVENT 6"/>
-                            <AboutTimeLine date="Dec 2019" title="EVENT 7" desc="EVENT 7"/>
-                            <AboutTimeLine date="EVENT 8 " title="EVENT 8" desc="EVENT 8"/>
-                            <AboutTimeLine date="EVENT 9 " title="EVENT 9" desc="EVENT 9"/>
-                            <AboutTimeLine date="EVENT 10 " title="EVENT 10" desc="EVENT 10" className="ATL-fade-bottom"/>
+                            <AboutTimeLine date="~ 2006" title="Pre school" desc="Pre school in Lane Cove, Sydney. Not much else to say about that... I'm not even sure how long I was there either..."/>
+                            <AboutTimeLine date="2007 - 2013" title="Primary School" desc="Spent my first half of prime growing years at Truscott Street Public School. It was during this period, where I got my first computer, though time was mostly spent playing video games."/>
+                            <AboutTimeLine date="2014 - 2019" title="High School" desc="Ryde Secondary College, learning more about the reality of life. Learnt a lot more about computers and even tried learning to code, more for the fun of it. Inspect element and changing details on websites was fun though. Built my first proper PC, and learnt a lot about PC hardware."/>
+                            <AboutTimeLine date="Oct 2019" title="Moving to Japan" desc="I moved to Japan in October as I had a job lined up in a Ski Resort. Between this time and Dec 2019, I worked/helped at my uncles bar for a bit, and also at a local medical center, developing my Japanese further."/>
+                            <AboutTimeLine date="Dec 2019" title="Tour Attendant @ Hakuba Sanroku Tours" desc="My first ever proper job, a tour attendant for Hakuba Sanroku Tours, and a receptionist at Hakuba Happo ski resort. During this time, I was developing my customer service, work ethic, and interpersonal skills. This job was seasonal and ended in March 2020."/>
+                            <AboutTimeLine date="~ 2020" title="Kitchen Hand @ a Sushi Train in Yokohama" desc="Briefly worked as a kitchen hand at a Sushi Train in Yokohama. It was during this time where I briefly tried learning C#."/>
+                            <AboutTimeLine date="~ 2021" title="Traffic Director job @ Bread Box in Yokohama" desc="Part time job as a traffic director for Bread Box. "/>
+                            <AboutTimeLine date="May 2021" title="Moved back to Australia" desc="Decided it was time for me to move back to Australia with my new learnt skills."/>
+                            <AboutTimeLine date="Oct 2021" title="Floor Staff/Bar Attendant @ Alex & co" desc="Worked as a floor staff, moving my way up to a Bar attendant at Alex & Co in Parramatta. Improving my customer service & interpersonal skills."/>
+                            <AboutTimeLine date="May 2022" title="Bar Attendant @ The Commercial Hotel" desc="Worked as bar attendant at The Commercial Hotel in Parramatta, learning about the gaming industry."/>
+                            <AboutTimeLine date="Oct 2022" title="Controlroom Operator @ Security Data Systems" desc="As a controlroom operator at Security and Data Systems, I was responsible for maintaining data records, and integrity of security systems. Monitoring a range of tasks, including any alarms or irregularities, as well as handling inbound & outbound calls in a professional and courteous manner, was a key aspect of my role. 
+                            During this time, I started learning C in CS50, a course developed by Harvard Univerity as well as html and css via online websites. I also learnt to write some google app script code for some functions."/>
                         </AboutTimeLineContainer>
                         {/* Could make a time line, interactive. it can be from a button or from mouse movement? left back to the past and right to the present. man can get bigger and smaller
                         this can make the use of an education  */}
@@ -166,6 +172,14 @@ export default function Page() {
                             <ContactBlocks className="GitHub" href="https://github.com/Wazmond" target="_blank">
                                 <ContactLogo src={GitLogo} alt="GitHub"/>
                                 <ContactLogoDesc>@WAZMOND</ContactLogoDesc>
+                            </ ContactBlocks>
+                            <ContactBlocks className="LinkedIn" href="https://www.linkedin.com/in/ryuichi-nakamura-37b942308/" target="_blank">
+                                <ContactLogo src={LinkedInLogo} alt="LinkedIn"/>
+                                <ContactLogoDesc>@RYUICHI NAKAMURA</ContactLogoDesc>
+                            </ ContactBlocks>
+                            <ContactBlocks className="Instagram" href="https://www.instagram.com/ry.oochi/" target="_blank">
+                                <ContactLogo src={InstagramLogo} alt="Instagram"/>
+                                <ContactLogoDesc>@RY.OOCHI</ContactLogoDesc>
                             </ ContactBlocks>
                             <ContactBlocks className="Phone" href="tel:+61 466 078 612">
                                 <ContactLogo src={PhoneLogo} alt="Phone"/>
