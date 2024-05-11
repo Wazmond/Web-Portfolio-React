@@ -119,8 +119,9 @@ export default function Page() {
             <Psegment id="home"> 
                 <HomePage> 
                     <HomeTextContainer>
-                        <h1>Hi I'm <name>Ryuichi Nakamura</name></h1>
-                        <p>I'm an aspiring developer based in Sydney.</p>
+                        <p className="greeting">Hi I'm</p>
+                        <h1 className="name">Ryuichi Nakamura</h1>
+                        <p className="description">I'm an aspiring developer based in Sydney.</p>
                     </HomeTextContainer>
                 </HomePage>
             </Psegment>
@@ -137,16 +138,16 @@ export default function Page() {
                             So let's connect and building something awesome. </p>
                         </AboutTextContainer>
                         <AboutTimeLineContainer>
-                            <AboutTimeLine date="25/10/2001" title="Ryuichi was born" desc="Born in Tokyo, Japan." className="ATL-fade-top"/>
-                            <AboutTimeLine date="~ 2004" title="Immigrated to Australia" desc="Immigrated to Sydney, Australia around the age of 3"/>
-                            <AboutTimeLine date="~ 2006" title="Pre school" desc="Pre school in Lane Cove, Sydney. Not much else to say about that... I'm not even sure how long I was there either..."/>
-                            <AboutTimeLine date="2007 - 2013" title="Primary School" desc="Spent my first half of prime growing years at Truscott Street Public School. It was during this period, where I got my first computer, though time was mostly spent playing video games."/>
-                            <AboutTimeLine date="2014 - 2019" title="High School" desc="Ryde Secondary College, learning more about the reality of life. Learnt a lot more about computers and even tried learning to code, more for the fun of it. Inspect element and changing details on websites was fun though. Built my first proper PC, and learnt a lot about PC hardware."/>
-                            <AboutTimeLine date="Oct 2019" title="Moving to Japan" desc="I moved to Japan in October as I had a job lined up in a Ski Resort. Between this time and Dec 2019, I worked/helped at my uncles bar for a bit, and also at a local medical center, developing my Japanese further."/>
+                            {/* <AboutTimeLine date="25/10/2001" title="Ryuichi was born" desc="Born in Tokyo, Japan." className="ATL-fade-top"/> */}
+                            {/* <AboutTimeLine date="~ 2004" title="Immigrated to Australia" desc="Immigrated to Sydney, Australia around the age of 3"/>
+                            <AboutTimeLine date="~ 2006" title="Pre school" desc="Pre school in Lane Cove, Sydney. Not much else to say about that... I'm not even sure how long I was there either..."/> */}
+                            {/* <AboutTimeLine date="2007 - 2013" title="Primary School" desc="Spent my first half of prime growing years at Truscott Street Public School. It was during this period, where I got my first computer, though time was mostly spent playing video games."/> */}
+                            {/* <AboutTimeLine date="2014 - 2019" title="High School" desc="Ryde Secondary College, learning more about the reality of life. Learnt a lot more about computers and even tried learning to code, more for the fun of it. Inspect element and changing details on websites was fun though. Built my first proper PC, and learnt a lot about PC hardware."/>
+                            <AboutTimeLine date="Oct 2019" title="Moving to Japan" desc="I moved to Japan in October as I had a job lined up in a Ski Resort. Between this time and Dec 2019, I worked/helped at my uncles bar for a bit, and also at a local medical center, developing my Japanese further."/> */}
                             <AboutTimeLine date="Dec 2019" title="Tour Attendant @ Hakuba Sanroku Tours" desc="My first ever proper job, a tour attendant for Hakuba Sanroku Tours, and a receptionist at Hakuba Happo ski resort. During this time, I was developing my customer service, work ethic, and interpersonal skills. This job was seasonal and ended in March 2020."/>
                             <AboutTimeLine date="~ 2020" title="Kitchen Hand @ a Sushi Train in Yokohama" desc="Briefly worked as a kitchen hand at a Sushi Train in Yokohama. It was during this time where I briefly tried learning C#."/>
                             <AboutTimeLine date="~ 2021" title="Traffic Director job @ Bread Box in Yokohama" desc="Part time job as a traffic director for Bread Box. "/>
-                            <AboutTimeLine date="May 2021" title="Moved back to Australia" desc="Decided it was time for me to move back to Australia with my new learnt skills."/>
+                            {/* <AboutTimeLine date="May 2021" title="Moved back to Australia" desc="Decided it was time for me to move back to Australia with my new learnt skills."/> */}
                             <AboutTimeLine date="Oct 2021" title="Floor Staff/Bar Attendant @ Alex & co" desc="Worked as a floor staff, moving my way up to a Bar attendant at Alex & Co in Parramatta. Improving my customer service & interpersonal skills."/>
                             <AboutTimeLine date="May 2022" title="Bar Attendant @ The Commercial Hotel" desc="Worked as bar attendant at The Commercial Hotel in Parramatta, learning about the gaming industry."/>
                             <AboutTimeLine date="Oct 2022" title="Controlroom Operator @ Security Data Systems" desc="As a controlroom operator at Security and Data Systems, I was responsible for maintaining data records, and integrity of security systems. Monitoring a range of tasks, including any alarms or irregularities, as well as handling inbound & outbound calls in a professional and courteous manner, was a key aspect of my role. 

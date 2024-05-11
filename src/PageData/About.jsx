@@ -1,7 +1,11 @@
 import styled from "styled-components"
 
 export const About = styled.div`
-    overflow:hidden;
+    overflow: hidden;
+
+    height: 100%;
+    width: 100%;
+    padding: 25px;
 
     display: flex;
     flex-direction: column;
@@ -12,8 +16,9 @@ export const About = styled.div`
 export const AboutTextContainer = styled.div`
     position: relative;
 
-    margin: 5% 7.5% 5%;
+    margin-top: -10px;
     word-wrap: break-word;
+    margin-bottom: 25px;
 
     @media only screen and (min-width:590px) {
         width: 500px;
@@ -37,17 +42,8 @@ export const AboutTextContainer = styled.div`
 
 export const AboutTimeLineContainer = styled.div`
     border: 2px solid #0a0035;
-    position: relative;
     align-self: center;
-
-    height: 50vh;
-    width: 85vw;
-    flex-wrap: wrap;
-
-    overflow: hidden;
     overflow-y: scroll;
-    /* scrollbar-gutter: stable; */
-
 `;
 
 const TimelineContainer = styled.div`
