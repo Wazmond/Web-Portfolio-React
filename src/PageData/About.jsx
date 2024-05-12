@@ -5,7 +5,7 @@ export const About = styled.div`
 
     height: 100%;
     width: 100%;
-    padding: 25px;
+    padding: 25px 7.5%;
 
     display: flex;
     flex-direction: column;
@@ -16,12 +16,16 @@ export const About = styled.div`
 export const AboutTextContainer = styled.div`
     position: relative;
 
-    margin-top: -10px;
+    margin-top: auto;
     word-wrap: break-word;
-    margin-bottom: 25px;
+    margin-bottom: 5vh;
 
-    @media only screen and (min-width:590px) {
-        width: 500px;
+    font-size: 26px;
+    @media only screen and (max-width:750px) {
+        font-size: 3.5vw;
+    }
+    @media only screen and (min-width:775px) {
+        width: 675px;
     }
 
     h1 {
@@ -44,11 +48,14 @@ export const AboutTimeLineContainer = styled.div`
     border: 2px solid #0a0035;
     align-self: center;
     overflow-y: scroll;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 `;
 
 const TimelineContainer = styled.div`
     width: 100%;
-    /* border: 1px solid black; */
     display: flex;
 `;
 const BoxDiv = styled.div`
@@ -61,7 +68,6 @@ const GuideLine = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0 10px;
-
 `;
 const Dot = styled.div`
     border-radius: 50%;
@@ -80,8 +86,6 @@ const Line = styled.div`
 const TextContainer = styled.div`
     font-family: kanit;
     width: 100%;
-    margin: 30px 5px 30px 0;
-    /* border: 1px solid brown; */
 `;
 const TitleContainer = styled.div`
     display: flex;
@@ -90,8 +94,6 @@ const TitleContainer = styled.div`
         font-size: 2vw;
     }
     font-size: 14px;
-    
-
 `;
 const Date = styled.h1`
     width: 25vw;
